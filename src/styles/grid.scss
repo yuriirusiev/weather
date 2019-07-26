@@ -1,0 +1,42 @@
+@import "src/styles/variables.scss";
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:before, 
+    &:after {
+        display: table;
+        content: "";              
+    }
+
+    @media (max-width: $xxs-down) {
+        width: 100%;
+    }
+
+    @media (min-width: $xxs-up) {
+        width: 420px;
+    }
+
+    @media (min-width: $xs-up) {
+        width: 620px;
+    }
+
+    @media (min-width: $sm-up) {
+        width: 750px;
+    }
+
+    @media (min-width: $md-up) {
+        width: 970px;
+    }
+
+    @media (min-width: $lg-up) {
+        width: 1140px;
+    }
+
+    @media (min-width: $xl-up) {
+        width: 1399px;
+    }
+}

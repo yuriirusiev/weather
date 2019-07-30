@@ -3,32 +3,62 @@
         <div class="container">
             <div class="weather__inner">
                 <h1 class="weather__title">Weather Test Task</h1>
-                    <div class="weather__form__wrapper">
-                        <form class="weather__form">
+                <div class="weather__form__wrapper">
+                    <form id="weather__form" class="weather__form">
+                        <div class="weather__form__inner">
                             <div class="weather__form__inner">
-                                <div class="weather__form__inner">
-                                        <input 
-                                            class="weather__form__input" 
-                                            id="weather__form__input" 
-                                            type="text" 
-                                            placeholder="Введите наименование населенного пункта" 
-                                        />
-                                        <input 
-                                            class="weather__form__button" 
-                                            id="weather__form__button" 
-                                            type="submit" 
-                                            value="Show me"
-                                        />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="weather__show__display">
-                                    <p class="weather__show__display__date" id="weather__show__display__date">
-                                        
-                                    </p>
-                                </div>
+                                <input 
+                                    class="weather__form__input" 
+                                    id="weather__form__input" 
+                                    type="text" 
+                                    placeholder="Введите наименование населенного пункта" 
+                                />
+                                <button class="weather__form__button" id="weather__form__button" type="button">
+                                    Show me
+                                </button>
                             </div>
-                        </form>
+                        </div>
+                    </form>
+                </div>
+                <div class="weather__display">
+                    <p id="weather__display__date" class="weather__display__date"></p>
+                    <div id="weather__display__data-from-api" class="weather__display__data-from-api">
+                        <div id="weather__display__data-from-api__main-features" class="weather__display__data-from-api__main-features">
+                            <p id="weather__display__data-from-api__main-features__town" class="weather__display__data-from-api__main-features__town">
+                            </p>
+                            <p id="weather__display__data-from-api__main-features__description" class="weather__display__data-from-api__main-features__description">
+                            </p>
+                            <p id="weather__display__data-from-api__main-features__temperature" class="weather__display__data-from-api__main-features__temperature">
+                            </p> 
+                            <div class="weather__display__data-from-api__main-features__img-wrapper">
+                                <img id = "weather__display__data-from-api__main-features__icon" src="" />
+                            </div>
+                        </div>
+                        <div class="weather__display__data-from-api__details">
+                            <ul id="weather__display__data-from-api__details__list" class="weather__display__data-from-api__details__list">
+                                <li id="weather__display__data-from-api__details__humidity" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__pressure" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__temp-max" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__temp-min" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__sunrise" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__sunset" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                                <li id="weather__display__data-from-api__details__wind" 
+                                    class="weather__display__data-from-api__details__item">
+                                </li>
+                            </ul>        
+                        </div>
                     </div>
                 </div>
             </div>

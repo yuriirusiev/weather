@@ -41,9 +41,56 @@
     }
 }
 
-.weather__show__display__date {
-    padding: 10px 0; 
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
+.weather__display {
+    width: 100%;
+    color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather__display__date {
+    display: none;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.weather__display__data-from-api {
+    display: flex;
+    max-width: 550px;
+    align-items: center;
+    justify-content: center;
+}
+
+.weather__display__data-from-api__main-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather__display__data-from-api__main-features__town {
+    padding: 10px 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.weather__display__data-from-api__main-features__description {
+    padding: 0 0 15px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.weather__display__data-from-api__main-features__temperature {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.weather__display__data-from-api__details {
+    padding: 0 0 0 80px;
+    font-size: 20px;
+    line-height: 2;
 }

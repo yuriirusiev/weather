@@ -18,14 +18,6 @@ let DataFromAPI
 
 outputArea.style.display = 'none'
 
-//display current date and time
-let timeFix = (i) => {
-    if (i < 10) {
-      i = '0' + i
-    }
-    return i
-  }
-
 //Fetch Data from openweather API
 let reciveData = async () => {
   let userInputValue = userInput.value
@@ -53,6 +45,13 @@ let showParam = () => {
     showDateParagraph.style.color = 'red'
     showDateParagraph.innerText = 'Ошибка! Город не найден, попробуйте снова!'
   } else {
+    let timeFix = (i) => {
+      if (i < 10) {
+        i = '0' + i
+      }
+      return i
+    }
+    
     let currentDateAndTime = (new Date).toLocaleDateString() + ', ' + timeFix((new Date).getHours()) + ':' + timeFix((new Date).getMinutes())
     
     outputArea.style.display = 'flex'

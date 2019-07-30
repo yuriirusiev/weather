@@ -60,7 +60,7 @@
 
 .weather__display__data-from-api {
     display: flex;
-    max-width: 550px;
+    max-width: 650px;
     align-items: center;
     justify-content: center;
 }
@@ -69,6 +69,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .weather__display__data-from-api__main-features__town {

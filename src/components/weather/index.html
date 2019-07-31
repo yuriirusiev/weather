@@ -6,24 +6,25 @@
                 <div class="weather__form__wrapper">
                     <form id="weather__form" class="weather__form">
                         <div class="weather__form__inner">
-                            <div class="weather__form__inner">
-                                <input 
-                                    class="weather__form__input" 
-                                    id="weather__form__input" 
-                                    type="text" 
-                                    placeholder="Введите наименование населенного пункта" 
-                                />
-                                <button class="weather__form__button" id="weather__form__button" type="button">
-                                    Show me
-                                </button>
-                            </div>
+                            <input 
+                                class="weather__form__input" 
+                                id="weather__form__input" 
+                                type="text" 
+                                placeholder="Введите наименование населенного пункта" 
+                            />
+                            <button class="weather__form__button" id="weather__form__button" type="button">
+                                Show me
+                            </button>
                         </div>
                     </form>
                 </div>
                 <div class="weather__display">
-                    <p id="weather__display__date" class="weather__display__date"></p>
-                    <div id="weather__display__data-from-api" class="weather__display__data-from-api">
-                        <div id="weather__display__data-from-api__main-features" class="weather__display__data-from-api__main-features">
+                    <p id="weather__display__date" class="weather__display__date hidden">
+                    </p>
+                    <p id="weather__display__error" class="weather__display__error hidden">
+                    </p>
+                    <div id="weather__display__data-from-api" class="weather__display__data-from-api hidden">
+                        <div id="weather__display__data-from-api__main-features" class="weather__display__data-from-api__main-features visible">
                             <p id="weather__display__data-from-api__main-features__town" class="weather__display__data-from-api__main-features__town">
                             </p>
                             <p id="weather__display__data-from-api__main-features__description" class="weather__display__data-from-api__main-features__description">
@@ -31,7 +32,7 @@
                             <p id="weather__display__data-from-api__main-features__temperature" class="weather__display__data-from-api__main-features__temperature">
                             </p> 
                             <div class="weather__display__data-from-api__main-features__img-wrapper">
-                                <img id = "weather__display__data-from-api__main-features__icon" src="" />
+                                <img id="weather__display__data-from-api__main-features__icon" src="" />
                             </div>
                         </div>
                         <div class="weather__display__data-from-api__details">

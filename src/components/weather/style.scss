@@ -1,6 +1,6 @@
 .weather__wrapper {
     background: url(images/weather-bgr.png) no-repeat;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .weather__inner {
@@ -50,7 +50,6 @@
 }
 
 .weather__display__date {
-    display: none;
     text-align: center;
     padding: 15px 0;
     margin: 0;
@@ -58,11 +57,12 @@
     font-weight: 300;
 }
 
+.weather__display__error {
+    color: #ff0000;
+}
+
 .weather__display__data-from-api {
-    display: flex;
     max-width: 650px;
-    align-items: center;
-    justify-content: center;
 }
 
 .weather__display__data-from-api__main-features {

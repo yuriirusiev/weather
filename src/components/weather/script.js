@@ -19,7 +19,7 @@ let DataFromAPI
 outputArea.style.display = 'none'
 
 //Fetch Data from openweather API
-let reciveData = async () => {
+const reciveData = async () => {
   let userInputValue = userInput.value
 
   if (userInputValue === '') {
@@ -38,7 +38,7 @@ let reciveData = async () => {
 }
 
 //Show Weather Details
-let showParam = () => {
+const showParam = () => {
   if (DataFromAPI.cod === '404') {
     outputArea.style.display = 'none'
     showDateParagraph.style.display = 'block'
@@ -72,7 +72,7 @@ let showParam = () => {
   }
 }
 
-let InitShowAll = async () => {
+const InitShowAll = async () => {
   event.preventDefault()
   await reciveData()
   showParam()

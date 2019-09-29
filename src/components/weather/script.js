@@ -53,7 +53,7 @@ let currentDateAndTime = {
     }
     return i
   },
-  
+
   showDateAndTime () {
     let DateAndTime = (new Date).toLocaleDateString() + ', ' + this.timeFix((new Date).getHours()) + ':' + this.timeFix((new Date).getMinutes())
     return DateAndTime
